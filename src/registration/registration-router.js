@@ -19,5 +19,8 @@ registrationRouter
       })
       .catch(next);
   })
+  .get((req, res, next) => {
+    res.json;
+  })
 
   module.exports = registrationRouter;
