@@ -6,7 +6,7 @@ const RegistrationService = {
     return knex.from('registration').select('*').where('id', id).first();
   },
   getByState(knex, stateAbv) {
-    return knex.from('registration').select('*').where('stateabv', stateAbv).first();
+    return knex.from('registration').select('*').where('stateabv', "'" + stateAbv + "'").first();
   }
 }
 
