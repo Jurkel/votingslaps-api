@@ -5,6 +5,16 @@ const RegistrationService = require('./registration-service');
 const jsonParser = express.json();
 
 registrationRouter
+.route('/')
+.get((req, res, next) => {
+  RegistrationService.getAllRegistrations(req.app.get('db'))
+  .then((registrations) => {
+    console.log('registrations: ' + JSON.stringify(registrations));
+    res.json;
+  }) 
+})
+
+registrationRouter
   .route('/:stateabv')
   .all((req, res, next) => {
     console.log('stateABV before service:' + req.params.stateabv);
