@@ -9,6 +9,7 @@ registrationRouter
   .all((req, res, next) => {
     RegistrationService.getByState(req.app.get('db'), req.params.stateabv)
       .then((stateAbv) => {
+        console.log('stateABV:' + stateAbv)
         if (!stateAbv) {
           return res.status(404).json({
             error: { message: `State doesn't exist` },
