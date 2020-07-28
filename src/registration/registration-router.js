@@ -46,7 +46,7 @@ registrationRouter
       .catch(next);
   })
   .get((req, res, next) => {
-    res.json;
+    res.stateAbv;
   })
 
   module.exports = registrationRouter;
