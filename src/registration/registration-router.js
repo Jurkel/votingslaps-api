@@ -8,7 +8,6 @@ registrationRouter
   .route('/:stateabv')
   .all((req, res, next) => {
     console.log('stateABV before service:' + req.params.stateabv);
-    console.log('knex: ' + JSON.stringify(req.app.get('db')));
     RegistrationService.getByState(req.app.get('db'), req.params.stateabv)
       .then((stateAbv) => {
         console.log('stateABV:' + stateAbv)
