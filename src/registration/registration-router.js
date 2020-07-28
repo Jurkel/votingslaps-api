@@ -5,9 +5,9 @@ const RegistrationService = require('./registration-service');
 const jsonParser = express.json();
 
 registrationRouter
-  .route('/:stateAbv')
+  .route('/:stateabv')
   .all((req, res, next) => {
-    RegistrationService.getByState(req.app.get('db'), req.params.stateAbv)
+    RegistrationService.getByState(req.app.get('db'), req.params.stateabv)
       .then((stateAbv) => {
         if (!stateAbv) {
           return res.status(404).json({
