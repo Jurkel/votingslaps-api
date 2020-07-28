@@ -1,4 +1,4 @@
-INSERT INTO registration(id, "stateAbv", "stateFull", "generalVoting", "registrationDeadlineInPerson", "registrationDeadlineMail", "registrationDeadlineOnline", "earlyVoting", "absenteeVoting", "absenteeRequestDeadlineInPerson", "absenteeRequestDeadlineMail", "absenteeRequestDeadlineOnline", "absenteeReturnDeadline")
+INSERT INTO registration("id", "stateAbv", "stateFull", "generalVoting", "registrationDeadlineInPerson", "registrationDeadlineMail", "registrationDeadlineOnline", "earlyVoting", "absenteeVoting", "absenteeRequestDeadlineInPerson", "absenteeRequestDeadlineMail", "absenteeRequestDeadlineOnline", "absenteeReturnDeadline")
 VALUES
 (1, "AL", "Alabama", 2020-11-03, 15, 15, 15, "N/A", true, 5, 5, null, "Postmarked 1 day before Election Day, received by noon on Election Day."),
 (2, "AK", "Alaska", 2020-11-03, 30, 30, 30, "15", true, 10, 10, 10, "Postmarked by Election Day and received 10 days after Election Day."),

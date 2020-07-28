@@ -11,5 +11,5 @@ CREATE TABLE registration (
     absenteeRequestDeadlineInPerson INT,
     absenteeRequestDeadlineMail INT,
     absenteeRequestDeadlineOnline INT,
-    absenteeReturnDeadline INT
+    absenteeReturnDeadline TEXT
 )
