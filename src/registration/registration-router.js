@@ -10,6 +10,8 @@ registrationRouter
   RegistrationService.getAllRegistrations(req.app.get('db'))
   .then((registrations) => {
     console.log('registrations: ' + JSON.stringify(registrations));
+    console.log('res getAllRegristrations: ' + res);
+    res.send(registrations);
     res.json;
   }) 
 })
