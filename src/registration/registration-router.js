@@ -16,17 +16,17 @@ registrationRouter
   }) 
 })
 
-registrationRouter
-.route('/:id')
-.get((req, res, next) => {
-  RegistrationService.getById(req.app.get('db'), req.params.id)
-  .then((id) => {
-    console.log('id: ' + JSON.stringify(id));
-    console.log('res getAllRegristrations: ' + JSON.stringify(res));
-    res.send(id);
-    res.json;
-  }) 
-})
+// registrationRouter
+// .route('/:id')
+// .get((req, res, next) => {
+//   RegistrationService.getById(req.app.get('db'), req.params.id)
+//   .then((id) => {
+//     console.log('id: ' + JSON.stringify(id));
+//     console.log('res getAllRegristrations: ' + res.json);
+//     res.send(id);
+//     res.json;
+//   }) 
+// })
 
 registrationRouter
   .route('/:stateabv')
