@@ -7,6 +7,7 @@ const jsonParser = express.json();
 registrationRouter
   .route('/:stateabv')
   .all((req, res, next) => {
+    console.log('stateABV before service:' + req.params.stateabv);
     RegistrationService.getByState(req.app.get('db'), req.params.stateabv)
       .then((stateAbv) => {
         console.log('stateABV:' + stateAbv)
