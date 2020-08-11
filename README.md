@@ -8,6 +8,7 @@ This endpoint provides information on voting deadlines for the United States. De
   > <https://cryptic-meadow-64051.herokuapp.com>
 
 - **Method:**
+  
   GET
 
 - **Success Response:**
