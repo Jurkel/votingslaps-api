@@ -1,8 +1,6 @@
 const express = require('express');
-const path = require('path');
 const registrationRouter = express.Router();
 const RegistrationService = require('./registration-service');
-const jsonParser = express.json();
 
 registrationRouter
 .route('/')
