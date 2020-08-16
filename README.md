@@ -7,9 +7,65 @@ This API provides information on voting deadlines for the United States. Deadlin
 - **URL**
   > <https://cryptic-meadow-64051.herokuapp.com>
 
-- **Method:**
+- **Endpoints:**
   
-  GET
+  GET /registration
+
+  ```
+  // req.body
+  {
+    ?
+  }
+
+  // res.body
+  {  
+    [
+      {
+        id: Number,
+        stateabv: String,
+        statefull: String,
+        generalvoting: String,
+        registrationdeadlineinperson: Number,
+        registrationdeadlinemail: Number,
+        registrationdeadlineonline: Number,
+        earlyvoting: String,
+        absenteevoting: Boolean,
+        absenteerequestdeadlineinperson: Number,
+        absenteerequestdeadlinemail: Number,
+        absenteerequestdeadlineonline: Number,
+        absenteereturndeadline: String,
+      }
+    ]
+  }
+  ```
+
+    GET /registration/:stateabv
+
+  ```
+  // req.body
+  {
+    ?
+  }
+
+  // res.body
+  {  
+    {
+      id: Number,
+      stateabv: String,
+      statefull: String,
+      generalvoting: String,
+      registrationdeadlineinperson: Number,
+      registrationdeadlinemail: Number,
+      registrationdeadlineonline: Number,
+      earlyvoting: String,
+      absenteevoting: Boolean,
+      absenteerequestdeadlineinperson: Number,
+      absenteerequestdeadlinemail: Number,
+      absenteerequestdeadlineonline: Number,
+      absenteereturndeadline: String,
+    }
+  }
+  ```
 
 - **Success Response:**
   - Code: 200
