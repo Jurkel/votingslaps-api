@@ -1,8 +1,8 @@
 # VotingSlaps-API
 
-### This is an API endpoint for the VotingSlaps app.
+### This is an API for the VotingSlaps app.
 ---
-This endpoint provides information on voting deadlines for the United States. Deadlines include registration deadlines, online voting deadlines, when to vote and information on how to vote if you're not registered. 
+This API provides information on voting deadlines for the United States. Deadlines include registration deadlines, online voting deadlines, when to vote and information on how to vote if you're not registered. 
 
 - **URL**
   > <https://cryptic-meadow-64051.herokuapp.com>
@@ -20,3 +20,9 @@ This endpoint provides information on voting deadlines for the United States. De
   - Code: 404
     
     Content: State doesn't exist
+
+- **Built With**
+  - Node - Run-time environment
+  - Express - Web applilcation framework
+  - Mocha - Testing
+  - Chai - Testing
