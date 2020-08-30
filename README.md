@@ -1,5 +1,14 @@
 # VotingSlaps-API
 
+# VotingSlaps
+
+[Live App](https://vercel.com/jurkel/voting-slaps)
+---
+
+## Screenshots
+
+![HomePage](https://i.imgur.com/kvPzpKb.png) ![Register](https://i.imgur.com/Y1O62UI.png)
+
 ### This is an API for the VotingSlaps app.
 ---
 This API provides information on voting deadlines for the United States. Deadlines include registration deadlines, online voting deadlines, when to vote and information on how to vote if you're not registered. 
