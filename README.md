@@ -1,7 +1,5 @@
 # VotingSlaps-API
 
-# VotingSlaps
-
 [Live App](https://vercel.com/jurkel/voting-slaps)
 ---
 
